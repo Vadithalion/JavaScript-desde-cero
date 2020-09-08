@@ -91,16 +91,16 @@ console.log(`${cadena} y que sepais que ${cadena2}`)// con esas comillas podemos
 console.log(Math.E);
 console.log(Math.PI);
 
-let num = 5.9;
+let num1 = 5.9;
 
-console.log(Math.abs(num));//devuelve VALOR ABSOLUTO
-console.log(Math.ceil(num));//devuelve EL SIGUIENTE ENTERO HACIA ARRIBA  6
-console.log(Math.floor(num));// devuelve EL SIGUIENTE ENTERO HACIA ABAJO  5
-console.log(Math.pow(num, 2));//devuelve POTENCIA (BASE, EXPONENTE)
+console.log(Math.abs(num1));//devuelve VALOR ABSOLUTO
+console.log(Math.ceil(num1));//devuelve EL SIGUIENTE ENTERO HACIA ARRIBA  6
+console.log(Math.floor(num1));// devuelve EL SIGUIENTE ENTERO HACIA ABAJO  5
+console.log(Math.pow(num1, 2));//devuelve POTENCIA (BASE, EXPONENTE)
 console.log(Math.round(Math.random()*100));// con esta formula generamos numeros "redondos" entre 0 y 100
 console.log(Math.random() * (100-0)+ 0);// formula para generar numeros ALEATORIOS >>>>>>>>>>>>>>>   console.log(Math.random() * (max - min) + min);
-console.log(Math.sign(num));//devuelve -1, 0, 1    para numeros negativos el cero y positivos
-console.log(Math.sqrt(num));// devuelve raiz cuadrada
+console.log(Math.sign(num1));//devuelve -1, 0, 1    para numeros negativos el cero y positivos
+console.log(Math.sqrt(num1));// devuelve raiz cuadrada
 
 
 /////////////////////////// CONDICIONALES
