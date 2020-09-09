@@ -3,13 +3,13 @@ let num2 = -8;
 let num0 = 0;
 
 
-//CONDICIONAL SIMPLE
+///////////////////////////CONDICIONAL SIMPLE
 if (num1 > 0 ) console.log(`${num1} es mayor que cero`);
 
 if (num1 < 0 ) console.log(`${num1} es NO menor que cero`); // esto no se ejecutara al no cumplir la condicion
 
 
-//CONDICIONAL COMPUESTO
+/////////////////////////CONDICIONAL COMPUESTO
 if (num2 > 0){
     console.log(`${num2} es mayor que cero`)
 }else{
@@ -17,7 +17,7 @@ if (num2 > 0){
 };
 
 
-//CONDICIONAL MULTIPLE
+/////////////////////////CONDICIONAL MULTIPLE
 if (num0 > 0){
     console.log(`${num0} es mayor que cero`)
 }else if(num0 < 0){
@@ -27,7 +27,7 @@ if (num0 > 0){
 };
 
 
-//Operadores LOGICOS
+//////////////////////////Operadores LOGICOS
 if(num1>0 && num2>0){
     console.log(`${num1} y ${num2} son mayor que cero`)// esto NO se va a ejecutar, ya que AMBOS han de cumplir la condicion
 };
@@ -74,10 +74,56 @@ if (word.length>4){
 
 let respuesta = true;
 
-//DOS FORMAS IGUALES DE COMPROBAR VERDADERO
+//////////////////////DOS FORMAS IGUALES DE COMPROBAR VERDADERO
 if(respuesta==true){console.log(`respuesta tiene valor TRUE`);};
 if(respuesta){console.log(`respuesta tiene valor TRUE`);};
 
-// DOS FORMAS IGUALES COMPROBAR NEGACION
+///////////////////// DOS FORMAS IGUALES COMPROBAR NEGACION
 if(respuesta!=true){console.log(`respuesta tiene valor FALSE`);};
 if(!respuesta){console.log(`respuesta tiene valor FALSE`);};
+
+
+
+//////////////SWITCH
+
+let num = 4;
+
+switch(num){
+    case 1: console.log(`${num} tiene el valor 1`);
+    break;
+
+    case 2: console.log(`${num} tiene el valor 2`);
+    break;
+    default: console.log(`${num} no vale ni 1 ni 2`);
+};
+
+// solo funcionara si el numero vale 1 2 3 4 5, que son los casos propuestos
+switch(num){
+    case 1:
+    case 3:
+    case 5:
+    console.log(`${num} es impar`)
+    break;
+    case 2:
+    case 4:
+    console.log(`${num} es par`)
+};
+
+
+/////////////OPERADORES TERNARIOS
+
+/*
+operador ternario
+
+(condicion) ?
+    (primera sentencia,                         primer bloque true
+    segunda sentencia)
+    :                                           :
+    (primera sentencia,                         segundo bloque false
+    segunda sentencia)
+*/
+
+(num % 2 == 0) ?
+        console.log(`${num} es par`)
+        :
+        console.log(`${num} es impar`);
